@@ -1,0 +1,10 @@
+- hosts: localhost
+  become_method: sudo
+  become: yes
+  tasks:
+    - name: install packages
+      apt:
+        name:
+        - linux-image-extra-4.13.0-17-generic
+        - usb-modeswitch
+        - usb-modeswitch-data                                         
